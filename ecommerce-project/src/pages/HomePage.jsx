@@ -1,9 +1,16 @@
 import { Header } from '../components/Header';
-import CheckmarkIcon from '../assets/images/icons/checkmark.png'
 import { products } from '../../starting-code/data/products'
+import CheckmarkIcon from '../assets/images/icons/checkmark.png'
 import './HomePage.css'
 
 export function HomePage() {
+  fetch('http://localhost:3000/api/products')
+    .then((response) => {
+      return response.json();
+    }).then((data) => {
+        console.log(data);
+    });
+
   return (
     <>
       <title>Ecommerce Project</title>
