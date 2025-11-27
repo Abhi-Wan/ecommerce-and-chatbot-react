@@ -12,12 +12,12 @@ export function Product({ product, loadCart }) {
       quantity
     });
     await loadCart();
-  }
+  };
 
   const selectQuantity = (event) => {
     const quantitySelected = Number(event.target.value);
     setQuantity(quantitySelected);
-  }
+  };
 
   return (
     <div className="product-container">
