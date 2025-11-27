@@ -8,6 +8,8 @@ import { TrackingPage } from './pages/TrackingPage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import './App.css'
 
+window.axios = axios;
+
 function App() {
   const [cart, setCart] = useState([]);
 
@@ -19,7 +21,6 @@ function App() {
   useEffect(() => {
     loadCart();
   }, []);
-
 
   return (
     <Routes>
