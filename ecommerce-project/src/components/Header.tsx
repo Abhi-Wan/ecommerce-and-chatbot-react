@@ -1,5 +1,5 @@
 import { NavLink, useNavigate, useSearchParams } from 'react-router';
-import { useState } from 'react';
+import { useState, type SetStateAction } from 'react';
 import CartIcon from '../assets/images/icons/cart-icon.png'
 import SearchIcon from '../assets/images/icons/search-icon.png'
 import LogoWhite from '../assets/images/logo-white.png'
@@ -27,7 +27,7 @@ export function Header({ cart }: HeaderProps) {
     totalQuantity += cartItem.quantity;
   });
 
-  const updateSearchInput = (event) => {
+  const updateSearchInput = (event: { target: { value: SetStateAction<string>; }; }) => {
     setSearch(event.target.value);
   };
 
