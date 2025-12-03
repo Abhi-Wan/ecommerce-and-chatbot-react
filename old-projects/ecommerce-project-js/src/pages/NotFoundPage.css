@@ -1,0 +1,26 @@
+.not-found-page {
+  max-width: 850px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.not-found-page .message {
+  font-size: x-large;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.not-found-page .image {
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
